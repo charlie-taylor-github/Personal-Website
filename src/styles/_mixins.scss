@@ -1,0 +1,61 @@
+@import "./variables";
+
+@mixin title-1 {
+  color: $primary-color;
+  font-weight: 600;
+
+  font-size: 2rem;
+
+  @media (min-width: $medium-screen-width) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: $large-screen-width) {
+    font-size: 4rem;
+  }
+}
+
+@mixin title-2 {
+  color: $primary-color;
+  font-weight: 400;
+
+  font-size: 1.75rem;
+
+  @media (min-width: $medium-screen-width) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: $large-screen-width) {
+    font-size: 3rem;
+  }
+}
+
+@mixin title-3 {
+  color: $primary-color;
+  font-weight: 400;
+
+  font-size: 1.25rem;
+
+  @media (min-width: $medium-screen-width) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: $large-screen-width) {
+    font-size: 2rem;
+  }
+}
+
+@mixin text {
+  color: $primary-color;
+  font-weight: 200;
+
+  font-size: 1rem;
+
+  @media (min-width: $medium-screen-width) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: $large-screen-width) {
+    font-size: 1.25rem;
+  }
+}

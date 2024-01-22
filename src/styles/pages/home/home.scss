@@ -1,0 +1,165 @@
+@import "../../main";
+
+* {
+  text-align: center;
+}
+
+body {
+  padding: 5%;
+  @media (min-width: 1000px) {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+// LINKS MENU
+.links-menu {
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: auto;
+
+  @media (min-width: 500px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.links-menu-item {
+  padding: 1%;
+  grid-row: auto;
+  border: 1px solid $primary-color;
+
+  h3 {
+    @include title-3;
+  }
+
+  &.selected {
+    h3 {
+      color: $accent-color;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#link-value {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding: 1%;
+  border: 1px solid $primary-color;
+  overflow-x: auto;
+
+  &,
+  a {
+    @include title-3;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// PROFILE
+#profile-picture {
+  margin-top: 5%;
+  border-radius: 100%;
+  border: 3px solid $primary-color;
+
+  width: 35%;
+
+  @media (min-width: $large-screen-width) {
+    width: 30%;
+  }
+}
+
+#title {
+  @include title-1;
+
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+#subtitle {
+  @include title-3;
+
+  margin-bottom: 5%;
+}
+
+// PORTFOLIO
+.heading {
+  @include title-2;
+
+  margin: 5% 0;
+}
+
+.project-preview {
+  border: 1px solid $primary-color;
+  padding: 3%;
+
+  * {
+    text-align: left;
+    margin: 1.5% 0;
+  }
+
+  .project-tags-and-date {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .project-tags {
+      @include text;
+    }
+
+    .project-date {
+      @include text;
+      text-align: center;
+    }
+  }
+
+  .project-title {
+    @include title-3;
+  }
+
+  .project-links {
+    margin: 2% 0;
+
+    a {
+      @include text;
+      margin-right: 5%;
+      text-decoration: none;
+      border: 1px solid $primary-color;
+      padding: 0.2% 1%;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .project-description {
+    @include text;
+  }
+
+  .testimonial {
+    h2 {
+      @include text;
+      font-weight: 500;
+    }
+
+    p {
+      @include text;
+    }
+  }
+}
