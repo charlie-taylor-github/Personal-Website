@@ -107,6 +107,7 @@ body {
 .project-preview {
   border: 1px solid $primary-color;
   padding: 3%;
+  margin: 3% 0;
 
   * {
     text-align: left;
@@ -119,6 +120,7 @@ body {
     justify-content: space-between;
 
     .project-tags {
+      width: 75%;
       @include text;
     }
 
@@ -137,7 +139,7 @@ body {
 
     a {
       @include text;
-      margin-right: 5%;
+      margin-right: 2%;
       text-decoration: none;
       border: 1px solid $primary-color;
       padding: 0.2% 1%;
