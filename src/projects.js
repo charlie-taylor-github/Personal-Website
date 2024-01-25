@@ -74,6 +74,7 @@ export default [
       The bot web-scrapes the relevant item information from the game’s official wiki page. 
       It then displays the items in a Discord embed that users can interact with to iterate through the results.`,
     links: {
+      view: 'https://discord.com/api/oauth2/authorize?client_id=1187399639532576909&permissions=8&scope=bot',
       github: 'https://github.com/charlie-taylor-github/AQW-Web-Scrape-Bot'
     }
   }
