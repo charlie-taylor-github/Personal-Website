@@ -73,6 +73,15 @@ export default [
       Users can filter items by gender, category and tag. 
       The bot web-scrapes the relevant item information from the game’s official wiki page. 
       It then displays the items in a Discord embed that users can interact with to iterate through the results.`,
+    testimonial: {
+      title: 'Jean Pierre Istanbouli',
+      quote: `
+        Charlie took on my heavy web scraping project that also involved making a custom discord bot with pagination and options features. 
+        Excellent communication, even through the holiday season, and delivered the project in less time than scheduled. 
+        Very friendly, approachable, and actually capable! 
+        I had contacted other sellers before contacting him and all could not take it on.
+      `
+    },
     links: {
       view: 'https://discord.com/api/oauth2/authorize?client_id=1187399639532576909&permissions=8&scope=bot',
       github: 'https://github.com/charlie-taylor-github/AQW-Web-Scrape-Bot'
