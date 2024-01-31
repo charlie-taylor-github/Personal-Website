@@ -114,12 +114,19 @@ body {
       cursor: pointer;
 
       @include text;
-      flex: 3;
+      flex: 10;
+
+      width: 80%;
+
+      @media (min-width: $medium-screen-width) {
+        margin-left: 2%;
+      }
     }
 
     .contact-icon {
       @include title-2;
       flex: 1;
+      width: 10%;
     }
 
     .contact-label {
