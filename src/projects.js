@@ -49,7 +49,8 @@ export default [
       Players must click at the right moment to navigate and score points. 
       The game ranked #1380 out of 5674 entries.`,
     links: {
-      view: 'https://itch.io/jam/gmtk-2021/rate/1084571'
+      view: 'https://itch.io/jam/gmtk-2021/rate/1084571',
+      github: 'https://github.com/charlie-taylor-github/Spinner-GMTK-Game-Jam-2021'
     }
   },
   {

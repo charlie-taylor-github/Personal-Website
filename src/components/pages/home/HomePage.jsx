@@ -1,18 +1,13 @@
 import React from 'react';
 import '../../../styles/pages/home/home.scss';
 
-import LinksMenu from './components/LinksMenu';
 import ProjectPreview from './components/ProjectPreview';
-
 import projects from "../../../projects.js";
+import ContactMenu from './components/ContactMenu.jsx';
 
 const HomePage = () => {
   return (
     <>
-      <LinksMenu />
-
-      <hr />
-
       <img
         src='/assets/images/profile.png'
         alt='profile picture'
@@ -21,6 +16,7 @@ const HomePage = () => {
       <h1 id='title'>Hey, I'm Charlie Taylor</h1>
       <h3 id='subtitle'>A software engineer from London</h3>
 
+      <ContactMenu />
       <hr />
 
       <h1 className='heading'>

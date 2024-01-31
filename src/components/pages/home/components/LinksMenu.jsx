@@ -25,48 +25,51 @@ const LinksMenu = () => {
   const [linkIndex, setLinkIndex] = useState(0);
 
   return (
+    // <>
+    //   <div className='links-menu'>
+    //     {
+    //       links.map((l, i) => {
+    //         if (linkIndex === i) {
+    //           return (
+    //             <div
+    //               key={i}
+    //               className='links-menu-item selected'
+    //             >
+    //               <h3>{l.label}</h3>
+    //             </div>
+    //           );
+    //         }
+    //         return (
+    //           <div
+    //             key={i}
+    //             className='links-menu-item'
+    //             onClick={() => setLinkIndex(i)}
+    //           >
+    //             <h3>{l.label}</h3>
+    //           </div>
+    //         );
+
+    //       })
+    //     }
+    //   </div >
+
+    //   {
+    //     linkIndex !== null && (
+    //       links[linkIndex].type === 'url' ?
+    //         <h3 id='link-value'>
+    //           <a href={links[linkIndex].value}>
+    //             {links[linkIndex].value}
+    //           </a>
+    //         </h3> :
+    //         <h3 id='link-value'>
+    //           {links[linkIndex].value}
+    //         </h3>
+    //     )
+    //   }
+
+    // </>
     <>
-      <div className='links-menu'>
-        {
-          links.map((l, i) => {
-            if (linkIndex === i) {
-              return (
-                <div
-                  key={i}
-                  className='links-menu-item selected'
-                >
-                  <h3>{l.label}</h3>
-                </div>
-              );
-            }
-            return (
-              <div
-                key={i}
-                className='links-menu-item'
-                onClick={() => setLinkIndex(i)}
-              >
-                <h3>{l.label}</h3>
-              </div>
-            );
-
-          })
-        }
-      </div >
-
-      {
-        linkIndex !== null && (
-          links[linkIndex].type === 'url' ?
-            <h3 id='link-value'>
-              <a href={links[linkIndex].value}>
-                {links[linkIndex].value}
-              </a>
-            </h3> :
-            <h3 id='link-value'>
-              {links[linkIndex].value}
-            </h3>
-        )
-      }
-
+      <h3>Contact Me</h3>
     </>
   );
 };
