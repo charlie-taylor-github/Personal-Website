@@ -62,7 +62,8 @@ export default [
       The platform features email verification and a password reset system. 
       Payments are managed through Stripe integration. This active and successful service is currently in use by numerous e-commerce professionals.`,
     links: {
-      view: 'https://productgem.co/'
+      view: 'https://productgem-a85171b7e0c7.herokuapp.com/',
+      github: 'https://github.com/charlie-taylor-github/ProductGem'
     }
   },
   {
